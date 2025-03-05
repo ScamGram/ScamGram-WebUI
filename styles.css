@@ -1,0 +1,142 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center; /* Center-align everything by default */
+}
+
+h2 {
+    font-size: 2em; /* Make the h2 headers bigger */
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Left and Right alignment for sections */
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Dropdown menu button */
+.menu-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #444;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media and video */
+iframe, video {
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+#botui-app {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative; /* Ensures the input is within the correct context */
+    z-index: 1; /* Make sure it’s above other content */
+}
+
+.botui-container {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    z-index: 1; /* Ensures that the container isn’t being hidden */
+}
+
+.botui-message {
+    z-index: 1;
+}
+
+.botui-actions-text input {
+    z-index: 2;
+    position: relative;  /* Make sure the text input field stays visible */
+}
